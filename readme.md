@@ -1,5 +1,4 @@
-<style>
-    li>span{
+li>span{
         font-weight:600
     }
     .code{
@@ -9,8 +8,7 @@
         color:darkgreen;
         font-size:20px;
         font-weight:600;
-    }
-</style>
+}
 # Project Name
 <span class="project-name">Session Example</span>
 
