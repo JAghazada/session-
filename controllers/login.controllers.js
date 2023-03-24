@@ -3,7 +3,8 @@ const loginController =async (req,res)=>{
     const {email,pass} = req.body
     if(email !== undefined  && pass !==undefined){
         const user = await userSchema.findOne({email})
-        console.log(user._id)
+        if(user===null)
+            return  res.json("email or pass is wrong")
         req.session.userID = user._id
         res.json(user)
     }

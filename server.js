@@ -20,5 +20,4 @@ app.use(session({
 }))
 app.use("/",routers)
 app.listen(PORT,()=>{
-    console.log(PORT);
 })
